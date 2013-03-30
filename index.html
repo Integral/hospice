@@ -1,111 +1,280 @@
 <!DOCTYPE html>
-<!-- saved from url=(0064)http://twitter.github.com/bootstrap/examples/justified-nav.html# -->
+<!-- saved from url=(0058)http://twitter.github.com/bootstrap/examples/carousel.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Template · Bootstrap</title>
+    <title>Carousel Template · Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 60px;
-        background: url(assets/autumn.jpg) no-repeat center center fixed; 
-  			-webkit-background-size: cover;
-  			-moz-background-size: cover;
-  			-o-background-size: cover;
-  			background-size: cover;
-      }
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+		.branding {
+			z-index: 10;
+			position: absolute;
+		}
 			
-			#bg { position: fixed; top: 0; left: 0; z-index: -1;}
-			.bgwidth { width: 100%; }
-			.bgheight { height: 100%; }
-			
-      /* Custom container */
-      .container {
-        margin: 0 auto;
-        max-width: 1000px;
-        padding: 10px;
-        -webkit-border-radius: 5px;
-				-moz-border-radius: 5px;
-				border-radius: 5px;
-				background-image: url(assets/container-bg.jpg);
-				background-attachment: fixed;
-				background-repeat: no-repeat no-repeat;
-      }
-      .container > hr {
-        margin: 60px 0;
-      }
-      
-      .muted {
-				color: #333;
-				text-transform: uppercase;
-				font-size: 48px;
-				font-weight: bold;
-				letter-spacing: 4px;
-				line-height: 40px;
-			}
+		.branding .logo img {
+			min-width: 0px;
+			position: static;
+			padding-left: 60px;
+		}
+		
+		.branding a {
+			color: #fff;
+			line-height: 1.5;
+			text-shadow: 1px 1px 4px #000;
+		}
+		
+		.branding address {
+			color: #fff;
+			padding: 12px 0px 0px 72px;
+			margin-bottom: 0px;
+			text-shadow: 1px 1px 4px #000;
+		}
 
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        margin: 80px 0;
-        text-align: center;
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      max-width: 550px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
       }
-      .jumbotron h1 {
-        font-size: 100px;
-        line-height: 1;
-      }
-      .jumbotron .lead {
-        font-size: 24px;
-        line-height: 1.25;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
       }
 
-      /* Supporting marketing content */
-      .marketing {
-        margin: 60px 0;
+      .carousel .item {
+        height: 500px;
       }
-      .marketing p + h4 {
-        margin-top: 28px;
+      .carousel img {
+        width: auto;
+        height: 500px;
       }
 
-
-      /* Customize the navbar links to be fill the entire space of the .navbar */
-      .navbar .navbar-inner {
+      .featurette {
+        height: auto;
         padding: 0;
       }
-      .navbar .nav {
-        margin: 0;
-        display: table;
-        width: 100%;
-      }
-      .navbar .nav li {
-        display: table-cell;
-        width: 1%;
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
         float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
       }
-      .navbar .nav li a {
-        font-weight: bold;
-        text-align: center;
-        border-left: 1px solid rgba(255,255,255,.75);
-        border-right: 1px solid rgba(0,0,0,.1);
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
       }
-      .navbar .nav li:first-child a {
-        border-left: 0;
-        border-radius: 3px 0 0 3px;
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
       }
-      .navbar .nav li:last-child a {
-        border-right: 0;
-        border-radius: 0 3px 3px 0;
+      .carousel .container {
+
       }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
     </style>
-    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -118,76 +287,167 @@
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
                     <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/ico/favicon.png">
-  </head>
+  <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style></head>
 
   <body>
-    <div class="container">
-			<div class="row">
-      	<div class="logo span3">
-      		<span style="font-weight:bold;">Первый</span><br />
-      		<span style="font-weight:bold;">Московский</span><br />
-        	<span class="muted">Хоспис</span><br />
-        	<span>Вера в достуйную жизнь до конца</span>
-      	</div>
-			</div>
-			
-      <!-- Jumbotron -->
-      <div class="jumbotron">
-      	<div id="myCarousel" class="carousel slide">
-  				<ol class="carousel-indicators">
-    				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    				<li data-target="#myCarousel" data-slide-to="1"></li>
-    				<li data-target="#myCarousel" data-slide-to="2"></li>
-  				</ol>
-  				<!-- Carousel items -->
-  				<div class="carousel-inner">
-    				<div class="active item"><img src="assets/1.jpg" /></div>
-    				<div class="item"><img src="assets/2.jpg" /></div>
-    				<div class="item"><img src="assets/3.jpg" /></div>
-  				</div>
-  				<!-- Carousel nav -->
- 				 	<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  				<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-				</div>
-        <h1>Marketing stuff!</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <a class="btn btn-large btn-success" href="./index_files/index.html">Get started today</a>
-      </div>
 
-      <hr>
 
-      <!-- Example row of columns -->
-      <div class="row-fluid">
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="./index_files/index.html">View details »</a></p>
-        </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="./index_files/index.html">View details »</a></p>
-       </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-          <p><a class="btn" href="./index_files/index.html">View details »</a></p>
+
+    <!-- NAVBAR
+    ================================================== -->
+    
+		<div class="container branding">
+    	<div class="row">
+    				<div class="span6 logo">
+    					<address>Телефон: +7(937)547-89-67</address>
+              <a href="#"><img src="assets/logo_wh.png" /></a>
+            </div>
+            <div class="span3">
+              <a href="#">Что такое ПМХ</a> <br>
+              <a href="#">Что необходимо для постановки на учет</a> <br>
+              <a href="#">Форма работы и устройство</a> <br>
+              <a href="#">Немедицинская помощь</a> <br>
+              <a href="#">Как попасть и что делать</a> <br>
+              <a href="#">Виды помощи</a> <br>
+              <a href="#">Фонд помощи хосписам "Вера"</a> <br>
+              <a href="#">Хосписы РФ</a>
+            </div>
+            <div class="span3">
+              <a href="#">Новости</a> <br>
+              <a href="#">История</a> <br>
+              <a href="#">Хоспис Благодарит</a><br>
+              <a href="#">Справочник</a> <br>
+              <a href="#">Программы обучения</a> <br>
+              <a href="#">Отчетность</a> <br>
+              <a href="#">FAQ</a><br>
+              <a href="#">Контакты</a>
+            </div>
         </div>
       </div>
 
-      <hr>
 
-      <div class="footer">
-        <p>© Company 2013</p>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item">
+          <img src="assets/1.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Sign up today</a>
+            </div>
+          </div>
+        </div>
+        <div class="item active">
+          <img src="assets/2.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Хоспис - это дом любви,</h1>
+              <p class="lead">место, где совершенно бесплатно помогают больным с диагнозом "рак" и их близким.</p>
+              <a class="btn btn-large btn-danger" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Помочь сейчас</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/3.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Browse gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="http://twitter.github.com/bootstrap/examples/carousel.html#myCarousel" data-slide="prev">‹</a>
+      <a class="right carousel-control" href="http://twitter.github.com/bootstrap/examples/carousel.html#myCarousel" data-slide="next">›</a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <h2>Что такое Первый Московский Хоспис?</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+          <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/carousel.html#">View details »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <h2>Что необходимо для постановки на учет?</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/carousel.html#">View details »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <h2>Форма работы и устройство ПМХ</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/carousel.html#">View details »</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="./index_files/browser-icon-chrome.png">
+        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
 
-    </div> <!-- /container -->
+      <hr class="featurette-divider">
 
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="./index_files/browser-icon-firefox.png">
+        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="./index_files/browser-icon-safari.png">
+        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="http://twitter.github.com/bootstrap/examples/carousel.html#">Back to top</a></p>
+        <p>© 2013 Company, Inc. · <a href="http://twitter.github.com/bootstrap/examples/carousel.html#">Privacy</a> · <a href="http://twitter.github.com/bootstrap/examples/carousel.html#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-    
     <script>
-
-	</script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="libs/holder.js"></script>
+  
 
 </body></html>
