@@ -41,7 +41,7 @@
 			padding-left: 60px;
 		}
 		
-		.branding a {
+		.branding a, .carousel a {
 			color: #fff;
 			line-height: 1.5;
 			text-shadow: 1px 1px 4px #000;
@@ -149,9 +149,13 @@
       text-shadow: 0 1px 1px rgba(0,0,0,.4);
     }
     .carousel-caption .btn {
-      margin-top: 10px;
+      margin: 10px 0px;
+      background-image: none;
+      width: 100px;
     }
-
+		.carousel-caption span {
+			color:#C4C4C4;
+		}
 
 
     /* MARKETING CONTENT
@@ -352,9 +356,18 @@
           <img src="assets/2.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Хоспис - это дом любви,</h1>
-              <p class="lead">место, где совершенно бесплатно помогают больным с диагнозом "рак" и их близким.</p>
-              <a class="btn btn-large btn-danger" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Помочь сейчас</a>
+            	<div class="row">
+            		<div class="span6">
+              		<h1>Хоспис - это дом любви,</h1>
+              		<p class="lead">место, где совершенно бесплатно помогают больным с диагнозом "рак" и их близким.</p>
+              	</div>
+              	<div class="span3 offset2">
+              		<a class="btn btn-large btn-danger" href="http://twitter.github.com/bootstrap/examples/carousel.html#">помочь</a>
+              		<p><a href="#">Какая помощь нужна сегодня</a></p>
+              		<p><a href="#">Помочь без денег</a></p>
+              		<span><i>Материальная помощь от родственника пациента не принимается.</i></span>
+            		</div>
+            	</div>
             </div>
           </div>
         </div>
