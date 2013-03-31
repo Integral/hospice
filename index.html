@@ -17,11 +17,17 @@
     /* Padding below the footer and lighter body text */
 
     body {
-      padding-bottom: 40px;
       color: #5a5a5a;
     }
 
-
+		footer {
+			background: #040915;
+			padding: 80px 0;
+			margin: 0;
+			background-image: url(assets/footer_bg.png);
+			background-repeat: no-repeat;
+			background-position: 80px 0px;
+		}
 
     /* CUSTOMIZE THE NAVBAR
     -------------------------------------------------- */
@@ -41,7 +47,7 @@
 			padding-left: 60px;
 		}
 		
-		.branding a, .carousel a {
+		.branding a, .carousel a, footer a {
 			color: #fff;
 			line-height: 1.5;
 			text-shadow: 1px 1px 4px #000;
@@ -172,7 +178,12 @@
       margin-left: 10px;
       margin-right: 10px;
     }
-
+    
+    .marketing {
+    	background-image: url(assets/dendel_bg_r.png);
+    	background-repeat: no-repeat;
+    	background-position: right bottom;
+    }
 
     /* Featurettes
     ------------------------- */
@@ -181,8 +192,9 @@
       margin: 80px 0; /* Space out the Bootstrap <hr> more */
     }
     .featurette {
-      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
       overflow: hidden; /* Vertically center images part 2: clear their floats. */
+      text-align: center;
+			padding-bottom: 80px;
     }
     .featurette-image {
       margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
@@ -347,8 +359,18 @@
           <img src="assets/1.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <p class="lead">Хосписы необходимы нашему обществу, в котором уровень боли превзошел все мыслимые пределы. Хоспис - это дом, в котором соединяются высочайший гуманизм и профессионализм...</p>
-              <a class="btn btn-large btn-primary" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Sign up today</a>
+            	<div class="row">
+            		<div class="span6">
+              		<h1>Хоспис - это дом любви,</h1>
+              		<p class="lead">место, где совершенно бесплатно помогают больным с диагнозом "рак" и их близким.</p>
+              	</div>
+              	<div class="span3 offset2">
+              		<a class="btn btn-large btn-danger" href="http://twitter.github.com/bootstrap/examples/carousel.html#">помочь</a>
+              		<p><a href="#">Какая помощь нужна сегодня</a></p>
+              		<p><a href="#">Помочь без денег</a></p>
+              		<span><i>Материальная помощь от родственника пациента не принимается.</i></span>
+            		</div>
+            	</div>
             </div>
           </div>
         </div>
@@ -375,9 +397,37 @@
           <img src="assets/3.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Browse gallery</a>
+            	<div class="row">
+            		<div class="span6">
+              		<h1>Хоспис - это дом любви,</h1>
+              		<p class="lead">место, где совершенно бесплатно помогают больным с диагнозом "рак" и их близким.</p>
+              	</div>
+              	<div class="span3 offset2">
+              		<a class="btn btn-large btn-danger" href="http://twitter.github.com/bootstrap/examples/carousel.html#">помочь</a>
+              		<p><a href="#">Какая помощь нужна сегодня</a></p>
+              		<p><a href="#">Помочь без денег</a></p>
+              		<span><i>Материальная помощь от родственника пациента не принимается.</i></span>
+            		</div>
+            	</div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/4.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+            	<div class="row">
+            		<div class="span6">
+              		<h1>Хоспис - это дом любви,</h1>
+              		<p class="lead">место, где совершенно бесплатно помогают больным с диагнозом "рак" и их близким.</p>
+              	</div>
+              	<div class="span3 offset2">
+              		<a class="btn btn-large btn-danger" href="http://twitter.github.com/bootstrap/examples/carousel.html#">помочь</a>
+              		<p><a href="#">Какая помощь нужна сегодня</a></p>
+              		<p><a href="#">Помочь без денег</a></p>
+              		<span><i>Материальная помощь от родственника пациента не принимается.</i></span>
+            		</div>
+            	</div>
             </div>
           </div>
         </div>
@@ -398,18 +448,18 @@
       <div class="row">
         <div class="span4">
           <h2>Что такое Первый Московский Хоспис?</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-          <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/carousel.html#">View details »</a></p>
+          <p><i>Это центр распространения идей помощи умирающим и их семьям, милосердия, сострадания, бескорыстия, добровольчества, благотворительности, достойной жизни до конца...</i></p>
+          <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Подробнее »</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <h2>Что необходимо для постановки на учет?</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/carousel.html#">View details »</a></p>
+          <p><i>Вам необходимо проживать в ЦАО, получить направление в хоспис от районного онколога, а также подробную выписку о заболевании из истории болезни...</i></p>
+          <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Подробнее »</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <h2>Форма работы и устройство ПМХ</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/carousel.html#">View details »</a></p>
+          <p><i>Сотрудники хосписа обеспечивают пациентов постоянным уходом; снимают болевой синдром и другие сопутствующие заболеванию симптомы, что требует не только медикаментозной терапии...</i></p>
+          <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Подробнее »</a></p>
         </div><!-- /.span4 -->
       </div><!-- /.row -->
 
@@ -417,42 +467,45 @@
       <!-- START THE FEATURETTES -->
 
       <hr class="featurette-divider">
-
+      
       <div class="featurette">
-        <img class="featurette-image pull-right" src="./index_files/browser-icon-chrome.png">
-        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2 class="featurette-heading"> +7 (499) 245-00-03 <span class="muted">info@hospice.ru</span></h2>
+        <p class="lead">Если Вам или Вашим близким необходима консультация врача или медицинской сестры хосписа.</p>
       </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-left" src="./index_files/browser-icon-firefox.png">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="./index_files/browser-icon-safari.png">
-        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-
-      <hr class="featurette-divider">
 
       <!-- /END THE FEATURETTES -->
 
+		</div><!-- /.container -->
 
       <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="http://twitter.github.com/bootstrap/examples/carousel.html#">Back to top</a></p>
-        <p>© 2013 Company, Inc. · <a href="http://twitter.github.com/bootstrap/examples/carousel.html#">Privacy</a> · <a href="http://twitter.github.com/bootstrap/examples/carousel.html#">Terms</a></p>
+    <footer>
+      <div class="container">
+        <div class="row">
+        		<div class="span4">
+        		</div>
+            <div class="span4">
+              <a href="#">Что такое ПМХ</a> <br>
+              <a href="#">Что необходимо для постановки на учет</a> <br>
+              <a href="#">Форма работы и устройство</a> <br>
+              <a href="#">Немедицинская помощь</a> <br>
+              <a href="#">Как попасть и что делать</a> <br>
+              <a href="#">Виды помощи</a> <br>
+              <a href="#">Фонд помощи хосписам "Вера"</a> <br>
+              <a href="#">Хосписы РФ</a>
+            </div>
+            <div class="span4">
+              <a href="#">Новости</a> <br>
+              <a href="#">История</a> <br>
+              <a href="#">Хоспис Благодарит</a><br>
+              <a href="#">Справочник</a> <br>
+              <a href="#">Программы обучения</a> <br>
+              <a href="#">Отчетность</a> <br>
+              <a href="#">FAQ</a><br>
+              <a href="#">Контакты</a>
+            </div>
+        </div>
+    </div>
       </footer>
-
-    </div><!-- /.container -->
-
 
 
     <!-- Le javascript
