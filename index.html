@@ -42,7 +42,7 @@
 		.branding img {
 			min-width: 0px;
 			position: static;
-			padding: 20px 0px;
+			padding: 10px 0px 10px 7px;
 		}
 		
 		.branding .logo {
@@ -62,6 +62,11 @@
 		.branding .span3 {
 			background: rgba(0,0,0,0.2);
 			height: 500px;
+		}
+		
+		.branding .menu {
+			width: 200px;
+			font-size: 15px;
 		}
 
     /* Special class on .container surrounding .navbar, used for positioning it into place. */
@@ -194,7 +199,9 @@
     .featurette {
       overflow: hidden; /* Vertically center images part 2: clear their floats. */
       text-align: center;
-			padding-bottom: 80px;
+    }
+    .features {
+    	padding-bottom: 80px;
     }
     .featurette-image {
       margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
@@ -323,26 +330,28 @@
     
 		<div class="container branding">
     	<div class="row">
-    				<div class="span3">
-              <a href="#" class="logo"><img src="assets/logo_wh.png" /></a>
-              <a href="#">Что такое хоспис</a> <br>
-              <a href="#">Услуги</a> <br>
-              <a href="#">Персонал</a> <br>
-              <a href="#">Пациенты</a> <br>
-              <a href="#">Волонтеры</a> <br>
-              <a href="#">Фото</a> <br>
-              <a href="#">Видео</a> <br>
-              <a href="#">Обучение</a>
-              <a href="#">Отзывы</a> <br>
-              <a href="#">Вопросы и ответы</a> <br>
-              <a href="#">Вера Миллионщикова</a><br>
-              <a href="#">Новости</a> <br>
-              <a href="#">Контакты</a> <br>
-              <a href="#">Фонд «Вера»</a> <br>
-              <a href="#">Хосписы РФ</a>
-            </div>
+    		<div class="span3">
+        	<a href="#" class="logo"><img src="assets/logo_wh.png" /></a>
+        	<div class="menu">
+          	<a href="#">Что такое хоспис</a> <br>
+          	<a href="#">Услуги</a> <br>
+          	<a href="#">Персонал</a> <br>
+          	<a href="#">Пациенты</a> <br>
+          	<a href="#">Волонтеры</a> <br>
+          	<a href="#">Фото</a> <br>
+          	<a href="#">Видео</a> <br>
+          	<a href="#">Обучение</a> <br>
+          	<a href="#">Отзывы</a> <br>
+          	<a href="#">Вопросы и ответы</a> <br>
+          	<a href="#">Вера Миллионщикова</a> <br>
+          	<a href="#">Новости</a> <br>
+          	<a href="#">Контакты</a> <br>
+          	<a href="#">Фонд «Вера»</a> <br>
+          	<a href="#">Хосписы РФ</a>
+          </div>
         </div>
       </div>
+    </div>
 
 
     <!-- Carousel
@@ -414,8 +423,18 @@
 
     <div class="container marketing">
 
+
+      <!-- START THE FEATURETTES -->
+      
+      <div class="featurette">
+        <h2 class="featurette-heading"> +7 (499) 245-00-03 <span class="muted">info@hospice.ru</span></h2>
+        <p class="lead">Если Вам или Вашим близким необходима консультация врача или медицинской сестры хосписа.</p>
+      </div>
+      
+      <hr class="featurette-divider">
+
       <!-- Three columns of text below the carousel -->
-      <div class="row">
+      <div class="row features">
         <div class="span4">
           <h2>Что такое Первый Московский Хоспис?</h2>
           <p><i>Это центр распространения идей помощи умирающим и их семьям, милосердия, сострадания, бескорыстия, добровольчества, благотворительности, достойной жизни до конца...</i></p>
@@ -432,16 +451,6 @@
           <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Подробнее »</a></p>
         </div><!-- /.span4 -->
       </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-      
-      <div class="featurette">
-        <h2 class="featurette-heading"> +7 (499) 245-00-03 <span class="muted">info@hospice.ru</span></h2>
-        <p class="lead">Если Вам или Вашим близким необходима консультация врача или медицинской сестры хосписа.</p>
-      </div>
 
       <!-- /END THE FEATURETTES -->
 
