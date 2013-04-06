@@ -70,7 +70,7 @@
 			font-size: 15px;
 		}
 
-    .dandelion .span4 {
+    .dandelion {
     	position: absolute;
     	height: 500px;
     	background-image:url('assets/dendel_bg_l.png');
@@ -125,7 +125,7 @@
       background-color: transparent;
       position: static;
       padding: 0 20px;
-      margin-top: 200px;
+      margin-top: 30px;
     }
     .carousel-caption h1,
     .carousel-caption .lead {
@@ -147,6 +147,15 @@
 		.carousel .item {-webkit-transition: opacity 3s; -moz-transition: opacity 3s; -ms-transition: opacity 3s; -o-transition: opacity 3s; transition: opacity 3s;}
 		.carousel .active.left {left:0;opacity:0;z-index:2;}
 		.carousel .next {left:0;opacity:1;z-index:1;}
+		
+		.slide2 .caption {
+			top: 100px;
+			position: relative;
+		}
+		
+		.slide2 .dandelion {
+			display:none;
+		}
 
 
     /* MARKETING CONTENT
@@ -197,13 +206,24 @@
 
     /* Thin out the marketing headings */
     .featurette-heading {
-      font-size: 50px;
+      font-size: 35px;
       font-weight: 300;
       line-height: 1;
       letter-spacing: -1px;
     }
 
-
+		.contact {
+			position: absolute;
+			top: 400px;
+			z-index: 30;
+			color: #fff;
+		}
+		
+		.contact .lead {
+      margin-bottom: 10px;
+			font-size: 20px;
+			line-height: 20px;
+    }
 
     /* RESPONSIVE CSS
     -------------------------------------------------- */
@@ -332,131 +352,176 @@
         </div>
       </div>
     </div>
-
-		<div class="container dandelion">
-    	<div class="row">
-    		<div class="span4 offset8">
-    		</div>
-    	</div>
-    </div>
-
+      
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
-        <div class="item">
+        <div class="item slide1">
           <img src="assets/1.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
             	<div class="row">
-            		<div class="span6 offset4">
+            		<div class="span8 offset4 caption">
               		<h1>Если человека нельзя вылечить,</h1>
               		<p class="lead">это не значит, что ему нельзя помочь</p>
               	</div>
+              	<div class="contact span8 offset4">
+      						<p class="lead">Круглосуточная консультация хосписа.</p>
+      						<h2 class="featurette-heading"> +7 (499) 245-00-03 +7 (499) 245-00-09</h2>
+    						</div>
+    						<div class="span4 offset8 dandelion">
+    						</div>
             	</div>
             </div>
           </div>
         </div>
-        <div class="item active">
+        <div class="item active slide2">
           <img src="assets/2.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
             	<div class="row">
-            		<div class="span7 offset4">
+            		<div class="span8 offset4 caption">
               		<p class="lead">Если человека нельзя вылечить,</p>
               		<h1>это не значит, что ему нельзя помочь.</h1>
               	</div>
+              	<div class="contact span8 offset4">
+      						<p class="lead">Круглосуточная консультация хосписа.</p>
+      						<h2 class="featurette-heading"> +7 (499) 245-00-03 +7 (499) 245-00-09</h2>
+    						</div>
             	</div>
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="item slide3">
           <img src="assets/3.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
             	<div class="row">
-            		<div class="span6 offset4">
+            		<div class="span6 offset6">
               		<h1>Хоспис - это</h1>
               		<p class="lead">комфортные условия и достойная жизнь до конца.</p>
               	</div>
+              	<div class="contact span8 offset4">
+      						<p class="lead">Круглосуточная консультация хосписа.</p>
+      						<h2 class="featurette-heading"> +7 (499) 245-00-03 +7 (499) 245-00-09</h2>
+    						</div>
+    						<div class="span4 offset8 dandelion">
+    						</div>
             	</div>
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="item slide4">
           <img src="assets/4.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
             	<div class="row">
-            		<div class="span6 offset4">
+            		<div class="span6 offset6">
               		<h1>Хоспис – это дом,</h1>
               		<p class="lead">где берегут жизнь, как бы мало ее ни осталось.</p>
               	</div>
+              	<div class="contact span8 offset4">
+      						<p class="lead">Круглосуточная консультация хосписа.</p>
+      						<h2 class="featurette-heading"> +7 (499) 245-00-03 +7 (499) 245-00-09</h2>
+    						</div>
+    						<div class="span4 offset8 dandelion">
+    						</div>
             	</div>
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="item slide5">
           <img src="assets/5.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
             	<div class="row">
-            		<div class="span6 offset4">
+            		<div class="span6 offset6">
               		<h1>Хоспис - это дом любви,</h1>
               		<p class="lead">место, где совершенно бесплатно помогают больным с диагнозом "рак" и их близким.</p>
               	</div>
+              	<div class="contact span8 offset4">
+      						<p class="lead">Круглосуточная консультация хосписа.</p>
+      						<h2 class="featurette-heading"> +7 (499) 245-00-03 +7 (499) 245-00-09</h2>
+    						</div>
+    						<div class="span4 offset8 dandelion">
+    						</div>
             	</div>
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="item slide6">
           <img src="assets/6.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
             	<div class="row">
-            		<div class="span6 offset4">
+            		<div class="span6 offset6">
               		<h1>Хоспис - это дом любви,</h1>
               		<p class="lead">место, где совершенно бесплатно помогают больным с диагнозом "рак" и их близким.</p>
               	</div>
+              	<div class="contact span8 offset4">
+      						<p class="lead">Круглосуточная консультация хосписа.</p>
+      						<h2 class="featurette-heading"> +7 (499) 245-00-03 +7 (499) 245-00-09</h2>
+    						</div>
+    						<div class="span4 offset8 dandelion">
+    						</div>
             	</div>
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="item slide7">
           <img src="assets/7.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
             	<div class="row">
-            		<div class="span6 offset4">
+            		<div class="span6 offset6">
               		<h1>Хоспис - это дом любви,</h1>
               		<p class="lead">место, где совершенно бесплатно помогают больным с диагнозом "рак" и их близким.</p>
               	</div>
+              	<div class="contact span8 offset4">
+      						<p class="lead">Круглосуточная консультация хосписа.</p>
+      						<h2 class="featurette-heading"> +7 (499) 245-00-03 +7 (499) 245-00-09</h2>
+    						</div>
+    						<div class="span4 offset8 dandelion">
+    						</div>
             	</div>
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="item slide8">
           <img src="assets/8.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
             	<div class="row">
-            		<div class="span6 offset4">
+            		<div class="span6 offset6">
             			<p class="lead">Как бы мало времени ни было, его достаточно, чтобы</p>
               		<h1>сделать все возможное.</h1>
               	</div>
+              	<div class="contact span8 offset4">
+      						<p class="lead">Круглосуточная консультация хосписа.</p>
+      						<h2 class="featurette-heading"> +7 (499) 245-00-03 +7 (499) 245-00-09</h2>
+    						</div>
+    						<div class="span4 offset8 dandelion">
+    						</div>
             	</div>
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="item slide9">
           <img src="assets/9.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
             	<div class="row">
-            		<div class="span6 offset4">
+            		<div class="span6 offset6">
               		<h1>Хоспис - это дом любви,</h1>
               		<p class="lead">место, где совершенно бесплатно помогают больным с диагнозом "рак" и их близким.</p>
               	</div>
+              	<div class="contact span8 offset4">
+      						<p class="lead">Круглосуточная консультация хосписа.</p>
+      						<h2 class="featurette-heading"> +7 (499) 245-00-03 +7 (499) 245-00-09</h2>
+    						</div>
+    						<div class="span4 offset8 dandelion">
+    						</div>
             	</div>
             </div>
           </div>
@@ -473,16 +538,7 @@
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <div class="container marketing">
-
-
-      <!-- START THE FEATURETTES -->
       
-      <div class="featurette">
-        <h2 class="featurette-heading"> +7 (499) 245-00-03 <span class="muted">+7 (499) 245-00-09</span></h2>
-        <p class="lead">Круглосуточная консультация хосписа.</p>
-      </div>
-      
-      <hr class="featurette-divider">
 
       <!-- Three columns of text below the carousel -->
       <div class="row features">
