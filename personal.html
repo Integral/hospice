@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)http://twitter.github.com/bootstrap/examples/carousel.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Первый Московский Хоспис</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <style>
+    	body,html {height:100%;}
+    	.sidebar {position: fixed; height: 100%;  
+    		background-image: url('assets/sidebar.jpg');
+    		background-position: center;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				-webkit-box-shadow: inset -1px 0 0 rgba(0,0,0,0.3);
+				-moz-box-shadow: inset -1px 0 0 rgba(0,0,0,0.3);
+				box-shadow: inset -1px 0 0 rgba(0,0,0,0.3); 
+			}
+  	.branding {
+			margin: 0px auto;
+			width: 270px;
+			z-index:9999;
+			position: relative;
+		}
+		.branding ul {
+			list-style-type: none;
+			margin-left: 0px;
+		}
+		.branding li a{
+			background: rgba(0,0,0,0.3);
+			display: block;
+			width: 210px;
+			padding: 5px 25px;	
+		}
+		.branding li a:hover {
+			background: rgba(0,0,0,0.5);
+		}
+		.branding a {
+			color: #fff;
+			line-height: 1.5;
+			text-shadow: 1px 1px 4px #000;
+		}
+		.branding a img {
+			border-bottom: 1px solid rgba(255,255,255,0.3);
+			margin-bottom: 10px;
+		}
+		.container-fluid {padding:0px;}
+		.dandelion {
+			height: 500px;
+    	background-image:url('assets/dendel_bg_l-f.png');
+    	background-repeat:no-repeat;
+			background-position:left bottom;
+			bottom: 0px;
+			position: absolute;
+			width: 100%;
+			z-index:0;
+		}
+		.prose .team {
+			text-align: center;
+		}
+		.prose .team img {
+			margin-bottom: 20px;
+		}
+		.prose .team h3 {
+			font-weight: 400;
+			font-size: 18px;
+			margin: 0;
+			line-height: 1;
+		}
+		.prose .team span {
+			text-transform: uppercase;
+			font-size: 11px;
+			line-height: 14px;
+			color: #777;
+			margin-bottom: 1em;
+			display: block;
+		}
+    </style>
+   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/ico/favicon.png">
+
+  <body>
+    
+    <!-- NAVBAR
+    ================================================== -->
+    
+		<div class="container-fluid">
+    	<div class="row-fluid">
+    		<div class="span4 sidebar">
+    			<div class="branding">
+        		<a href="#" class="logo"><img src="assets/logo_wh.png" /></a>
+        		<ul class="menu">
+          		<li><a href="#">Что такое хоспис</a></li>
+          		<li><a href="#">Услуги</a></li>
+          		<li><a href="#">Персонал</a></li>
+          		<li><a href="#">Пациенты</a></li>
+          		<li><a href="#">Волонтеры</a></li>
+          		<li><a href="#">Фото</a></li>
+          		<li><a href="#">Видео</a></li>
+          		<li><a href="#">Обучение</a></li>
+          		<li><a href="#">Отзывы</a></li>
+          		<li><a href="#">Вопросы и ответы</a></li>
+          		<li><a href="#">Вера Миллионщикова</a></li>
+          		<li><a href="#">Новости</a></li>
+          		<li><a href="#">Контакты</a></li>
+          		<li><a href="#">Фонд «Вера»</a></li>
+          		<li><a href="#">Хосписы РФ</a></li>
+          	</ul>
+        	</div>
+        	<div class="dandelion"></div>
+        </div>
+        <div class="span7 offset4 prose">
+        	<div class="row">
+      			<div class="span5 team">
+          		<img src="assets/personal/nevzorova.jpg" width="200" height="200" class="img-circle">
+          		<h3>Диана Владимировна Невзорова</h3>
+          		<p><span>главный врач</span></p>
+      			</div>
+      			<div class="span5 offset1 team">
+          		<img src="assets/personal/federmesser.jpg" width="200" height="200" class="img-circle">
+          		<h3>Нюта Федермессер</h3>
+          		<p><span>заведующая оргметодотделом по медицинской и социальной работе</span></p>
+      			</div>
+  				</div>
+  				<div class="row">
+      			<div class="span5 team">
+          		<img src="assets/personal/nevzorova.jpg" width="200" height="200" class="img-circle">
+          		<h3>Диана Владимировна Невзорова</h3>
+          		<p><span>главный врач</span></p>
+      			</div>
+      			<div class="span5 offset1 team">
+          		<img src="assets/personal/federmesser.jpg" width="200" height="200" class="img-circle">
+          		<h3>Нюта Федермессер</h3>
+          		<p><span>заведующая оргметодотделом по медицинской и социальной работе</span></p>
+      			</div>
+  				</div>
+  				<div class="row">
+      			<div class="span5 team">
+          		<img src="assets/personal/nevzorova.jpg" width="200" height="200" class="img-circle">
+          		<h3>Диана Владимировна Невзорова</h3>
+          		<p><span>главный врач</span></p>
+      			</div>
+      			<div class="span5 offset1 team">
+          		<img src="assets/personal/federmesser.jpg" width="200" height="200" class="img-circle">
+          		<h3>Нюта Федермессер</h3>
+          		<p><span>заведующая оргметодотделом по медицинской и социальной работе</span></p>
+      			</div>
+  				</div>
+  				<div class="row">
+      			<div class="span5 team">
+          		<img src="assets/personal/nevzorova.jpg" width="200" height="200" class="img-circle">
+          		<h3>Диана Владимировна Невзорова</h3>
+          		<p><span>главный врач</span></p>
+      			</div>
+      			<div class="span5 offset1 team">
+          		<img src="assets/personal/federmesser.jpg" width="200" height="200" class="img-circle">
+          		<h3>Нюта Федермессер</h3>
+          		<p><span>заведующая оргметодотделом по медицинской и социальной работе</span></p>
+      			</div>
+  				</div>
+        </div>
+      </div>
+    </div>
+   <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+  
+
+</body></html>
