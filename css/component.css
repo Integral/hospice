@@ -8,9 +8,9 @@
 
 .og-grid li {
 	display: inline-block;
-	margin: 10px 5px 0 5px;
+	margin: 0px 0px 2px 0px;
 	vertical-align: top;
-	height: 250px;
+	height: 200px;
 }
 
 .og-grid li > a,
@@ -37,14 +37,14 @@
 
 .og-expander {
 	position: absolute;
-	background: #ddd;
+	background: rgba(0,0,0,0.3);
 	top: auto;
-	left: 0;
-	width: 100%;
+	right: 0;
 	margin-top: 10px;
 	text-align: left;
 	height: 0;
 	overflow: hidden;
+	width: 68.3%;
 }
 
 .og-expander-inner {
@@ -68,7 +68,7 @@
 	width: 100%;
 	top: 50%;
 	height: 1px;
-	background: #888;
+	background: #fff;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	transform: rotate(45deg);
@@ -113,13 +113,14 @@
 	font-size: 52px;
 	padding: 40px 0 10px;
 	margin-bottom: 10px;
+	font: 100 40px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .og-details p {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
-	color: #999;
+	color: #f3f3f3;
 }
 
 .og-details a {
