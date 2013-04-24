@@ -13,7 +13,14 @@
     		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
     <style>
-    	body,html {height:100%;background:url('assets/squairy_light.png');}
+    	body,html {height:100%;}
+    	body {  
+    		background: url(assets/bodybg.jpg) no-repeat center center fixed; 
+  			-webkit-background-size: cover;
+  			-moz-background-size: cover;
+  			-o-background-size: cover;
+  			background-size: cover;
+  		}
     	.sidebar {position: fixed; height: 100%; width: inherit; z-index: 999;
     		background-image: url('assets/sidebar.jpg');
     		background-position: center;
@@ -36,13 +43,13 @@
 			margin-left: 0px;
 		}
 		.branding li a{
-			background: rgba(0,0,0,0.3);
+			background: rgba(0,0,0,0.5);
 			display: block;
 			width: 250px;
 			padding: 5px 25px;	
 		}
 		.branding li a:hover, .branding li a.active {
-			background: rgba(0,0,0,0.5);
+			background: rgba(0,0,0,0.7);
 		}
 		.branding a {
 			color: #fff;
